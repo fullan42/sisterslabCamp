@@ -89,7 +89,11 @@ public class homework1 {
 
         System.out.print("Üçüncü sayıyı girin: ");
         double sayi6 = s.nextDouble();
-        if(sayi5==sayi4)
+        if(sayi5==sayi4||sayi5==sayi6||sayi4==sayi6){
+            System.out.println("lütfen tüm sayıları farklı giriniz ");
+        }else{
+
+
         if (sayi4 > sayi5 && sayi6 > sayi5) {
             System.out.println(sayi5);
             if (sayi4 > sayi6) {
@@ -114,6 +118,7 @@ public class homework1 {
                 System.out.println(sayi5);
                 System.out.println(sayi4);
             }
+        }
         }
 
         //soru 7
@@ -171,32 +176,32 @@ public class homework1 {
 
         switch (secim) {
             case 1:
-                System.out.println("Dikdörtgenin uzun kenarını girin:");
+                System.out.println(" uzun kenarını girin:");
                 double uzunKenar = s.nextDouble();
-                System.out.println("Dikdörtgenin kısa kenarını girin:");
+                System.out.println(" kısa kenarını girin:");
                 double kisaKenar = s.nextDouble();
                 double dikdortgenAlan = uzunKenar * kisaKenar;
                 System.out.println("Dikdörtgenin alanı: " + dikdortgenAlan);
                 break;
 
             case 2:
-                System.out.println("Karenin kenar uzunluğunu girin:");
+                System.out.println(" kenar uzunluğunu girin:");
                 double kenarUzunlugu = s.nextDouble();
                 double kareAlan = kenarUzunlugu * kenarUzunlugu;
                 System.out.println("Karenin alanı: " + kareAlan);
                 break;
 
             case 3:
-                System.out.println("Üçgenin taban uzunluğunu girin:");
+                System.out.println(" taban uzunluğunu girin:");
                 double tabanUzunlugu = s.nextDouble();
-                System.out.println("Üçgenin yüksekliğini girin:");
+                System.out.println(" yüksekliğini girin:");
                 double yukseklik = s.nextDouble();
                 double ucgenAlan = 0.5 * tabanUzunlugu * yukseklik;
                 System.out.println("Üçgenin alanı: " + ucgenAlan);
                 break;
 
             default:
-                System.out.println("Geçersiz seçim!");
+                System.out.println("lütfen geçerli bir değer girin");
         }
     }
 }
